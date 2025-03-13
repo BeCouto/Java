@@ -1,0 +1,39 @@
+https://dontpad.com/poo20251
+
+   	POO
+
+   	Aula de 13/02/2025
+
+   	Paradigmas de programação
+
+   	- Programação procedural
+   	- Programação estruturada (C, Pascal, ...)
+   	- Programação orientada a objetos (Java, C++, C#, Kotlin, ...)
+   	- Programação orientada a aspectos (AspectJ, Spring AOP)
+   	- Programação multiparadigma (Python, Ruby, Groove, ...)
+
+   	Ferramentas
+   	- JDK (Java Development Kit)
+   	- IDE (IntelliJ)
+
+   	Pilares da Orientação a Objetos
+
+   	- Herança: Mecanismo que possibilita a um subtipo aproveitar propriedades (atributos,
+   	métodos e relacionamentos) definidas em um supertipo;
+
+   	- Polimorfismo: Capacidade de um objeto implementar diferentes comportamentos para um
+   	mesmo método (função).
+
+   	- Encapsulamento: Capacidade de um objeto de restringir o acesso a determinadas
+   	propriedades.
+
+
+   	Principais abstrações da orientação a objetos
+
+   	- Classe
+   		- Abstração que representa conceitos dos mundo real que possuem propriedades
+   		comuns;
+   		- Molde para objetos.
+
+
+   	 https://dontpad.com/poo20251
