@@ -1,5 +1,3 @@
-import java.util.function.Predicate;
-
 public class Professor extends Pessoa {
 
     String titulacao;
