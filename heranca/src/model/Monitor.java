@@ -5,6 +5,7 @@ public class Monitor extends Aluno {
     private double bolsa;
 
     public Monitor(){
+        super();
     }
 
     public Monitor(String nome, String telefone, String matricula, double bolsa){

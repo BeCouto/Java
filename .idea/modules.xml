@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classesobjetos/classesobjetos.iml" filepath="$PROJECT_DIR$/classesobjetos/classesobjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entrada/entrada.iml" filepath="$PROJECT_DIR$/entrada/entrada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca/heranca.iml" filepath="$PROJECT_DIR$/heranca/heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/incremento/incremento.iml" filepath="$PROJECT_DIR$/incremento/incremento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/precedencia/precedencia.iml" filepath="$PROJECT_DIR$/precedencia/precedencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scanner/scanner.iml" filepath="$PROJECT_DIR$/scanner/scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tempo/tempo.iml" filepath="$PROJECT_DIR$/tempo/tempo.iml" />
+    </modules>
+  </component>
+</project>
