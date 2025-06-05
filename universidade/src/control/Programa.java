@@ -1,35 +1,50 @@
 package control;
 
+import model.Curso;
 import model.Disciplina;
-import model.Professor;
-import model.Turma;
 
 public class Programa {
 
     public static void main(String[] args) {
 
-        Disciplina poo = new Disciplina("IBM0513", "Programacao 00", 80);
-        Disciplina engDados = new Disciplina("IBM1234", "Engenharia de Dados", 80);
-        Professor profAnderson = new Professor("321", "Anderson Souza", "Metre");
-        Professor profthiago = new Professor("123", "Thiago Souza", "Doutor");
-        Professor profTaita = new Professor("001", "Talita vieira", "doutora");
-        Turma pooSemProf = new Turma("CDIA001", "quinta-feira", "M1 a M4", "302", poo);
-        Turma pooThiago = new Turma("CDIA001", "quarta-feira", "T1 a T4", "302", profthiago, poo);
-        Turma engDadosanderson = new Turma("CDIA003", "Terça-feira", "MI a M4", "209", profAnderson, engDados);
 
-        pooSemProf.setProfessor(profTaita);
-        profthiago.addTurma(pooThiago);
-        profAnderson.addTurma(engDadosanderson);
-        profTaita.addTurma(pooSemProf);
+        Curso curso1 = new Curso("CD001", "Ciência de Dados");
+        Curso curso2 = new Curso("ENGSOFT002", "Engenharia de Software");
 
-        System.out.println(pooThiago.getProfessor().getNome());
+        Disciplina poo = new Disciplina("IA001", "Inteligência Artificial", 80, curso1);
+        Disciplina engDados = new Disciplina("BD001", "Banco de Dados para CD", 60, curso1);
 
-        for (Turma turma : profthiago.getTurmas()) {
-            System.out.println(turma.getDisciplina().getNome());
+
+        curso1.addDisciplina(poo);
+        curso1.addDisciplina(engDados);
+
+        curso2.addDisciplina(poo);
+        curso2.addDisciplina(engDados);
+
+
+        System.out.println("Curso: " + curso1.getNome() + " (Código: " + curso1.getCodigo() + ")");
+        System.out.println("Disciplinas do curso de " + curso1.getNome() + ":");
+        for (Disciplina disc : curso1.getDisciplinas()) {
+            System.out.println("- " + disc.getNome() + " (CH: " + disc.getCargaHoraria() + ")");
         }
 
-         for (Turma turma :poo.getTurmas()) {
-             System.out.println(turma.getProfessor().getNome());
-         }
+        System.out.println("\nCurso: " + curso2.getNome() + " (Código: " + curso2.getCodigo() + ")");
+        System.out.println("Disciplinas do curso de " + curso2.getNome() + ":");
+        for (Disciplina disc : curso2.getDisciplinas()) {
+            System.out.println("- " + disc.getNome() + " (CH: " + disc.getCargaHoraria() + ")");
+        }
+
+        Disciplina eticaProfissional = new Disciplina("ETI001", "Ética Profissional em TI", 40, curso1);
+        Disciplina governancaTI = new Disciplina("GOV002", "Governança de TI", 60, curso1);
+
+        curso1.addDisciplina(eticaProfissional);
+        curso1.addDisciplina(governancaTI);
+
+        System.out.println("\nCurso: " + curso1.getNome() + " (Código: " + curso1.getCodigo() + ")");
+        System.out.println("Disciplinas do curso de " + curso1.getNome() + ":");
+        for (Disciplina disc : curso1.getDisciplinas()) {
+            System.out.println("- " + disc.getNome() + " (CH: " + disc.getCargaHoraria() + ")");
+        }
+
     }
 }

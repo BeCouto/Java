@@ -9,13 +9,17 @@ public class Disciplina {
     private String nome;
     private int cargaHoraria;
     private Set<Turma> turmas;
+    private Curso curso;
 
-    public Disciplina(String codigo, String nome, int cargaHoraria) {
+
+    public Disciplina(String codigo, String nome, int cargaHoraria, Curso curso) {
         this.turmas = new HashSet<Turma>();
+        this.curso = curso;
         this.codigo = codigo;
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
     }
+
 
     public String getCodigo() {
         return codigo;
@@ -48,12 +52,21 @@ public class Disciplina {
     public void setTurmas(Set<Turma> turmas) {
         this.turmas = turmas;
     }
+
     public void addTurma(Turma turma){
         this.turmas.add(turma);
     }
 
     public void removeTurma(Turma turma){
-        this.turmas.add(turma);
+        this.turmas.remove(turma); // CORRIGIDO: era .add()
     }
 
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
 }
+
